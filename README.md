@@ -1,4 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# `simple-message-signer`
+
+A simple webpage that lets you sign and verify text based messages on Solana.
+
+## Storage
+
+This server has no storage and perfoms all the work on the client side. No data is collected.
+
+As a side effect, because no storage is available, there's a 1500 character limit on the message length to prevent the share URL from getting unreasonably large.
+
+## Usage 
+
+### Signing 
+
+1. Connect a compatible Solana Wallet to the webpage. 
+2. Type out your message in the message field.
+3. Click on the sign message button.
+4. Review and approve the signing request in the wallet.
+
+### Verifying
+
+1. Fill out the address, message, and signature fields.
+2. Click on the verify button. 
+3. A notification indicating the status of the verification will be displayed briefly.
+
+### Sharing
+
+A copy button is enabled on successful message verification and lets users copy a url to the verified message.
 
 ## Getting Started
 
@@ -8,10 +35,6 @@ First, run the development server:
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
