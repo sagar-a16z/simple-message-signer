@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { SignerWalletContext } from '@/components/context';
 import { Accordion, AccordionDetails, AccordionSummary, Alert, CssBaseline, Link, Snackbar } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { MessageForm } from '@/components/messageform';
+import { MessageForm } from '@/components/message-form';
 import ButtonAppBar from '@/components/appbar';
 import { ExpandCircleDown } from '@mui/icons-material';
 

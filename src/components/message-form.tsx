@@ -5,7 +5,7 @@ import { ContentCopy } from "@mui/icons-material"
 import { SetStateAction, useCallback, useEffect, useMemo, useState } from "react"
 import { PublicKey } from "@solana/web3.js"
 import { ed25519 } from "@noble/curves/ed25519"
-import { MeteredMessageBox } from "./meteredmessagebox";
+import { MeteredMessageBox } from "./metered-message-box";
 
 /// Set the message verification state and request to display it
 export type ReportMessageVerification = (verified: boolean, show?: boolean) => void;
